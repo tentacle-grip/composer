@@ -56,7 +56,7 @@ Using a different `composer.json` file, can be accomplished by adding an environ
 **e.g.:**
   ```bash
   docker run --rm -it \
-      -e composer-dev.json
+      -e COMPOSER=composer-dev.json \
       -w `pwd` -v `pwd`:`pwd` \
       tentacledock/composer:1.0-php5.6.30 \
       build <Repository URL>
