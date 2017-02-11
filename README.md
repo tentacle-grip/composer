@@ -14,7 +14,7 @@ You can read more about Composer in the [official documentation](https://getcomp
   
   ```bash
   docker run --rm -it \
-      -w `pwd` -volume `pwd`:`pwd` \
+      -w `pwd` -v `pwd`:`pwd` \
       tentacledock/composer:1.0-php5.6.30 \
       composer install
   ```
@@ -23,7 +23,7 @@ You can read more about Composer in the [official documentation](https://getcomp
   
   ```bash
   docker run --rm -it \
-      -w `pwd` -volume `pwd`:`pwd` \
+      -w `pwd` -v `pwd`:`pwd` \
       tentacledock/composer:1.0-php5.6.30 \
       composer update
   ```
@@ -34,7 +34,7 @@ You can read more about Composer in the [official documentation](https://getcomp
   
   ```bash
   docker run --rm -it \
-      -w `pwd` -volume `pwd`:`pwd` \
+      -w `pwd` -v `pwd`:`pwd` \
       tentacledock/composer:1.0-php5.6.30 \
       build
   ```
@@ -43,7 +43,7 @@ You can read more about Composer in the [official documentation](https://getcomp
   
   ```bash
   docker run --rm -it \
-      -w `pwd` -volume `pwd`:`pwd` \
+      -w `pwd` -v `pwd`:`pwd` \
       tentacledock/composer:1.0-php5.6.30 \
       build <Repository URL>
   ```
@@ -57,7 +57,7 @@ Using a different `composer.json` file, can be accomplished by adding an environ
   ```bash
   docker run --rm -it \
       -e composer-dev.json
-      -w `pwd` -volume `pwd`:`pwd` \
+      -w `pwd` -v `pwd`:`pwd` \
       tentacledock/composer:1.0-php5.6.30 \
       build <Repository URL>
   ```
